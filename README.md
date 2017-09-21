@@ -29,7 +29,25 @@ I/O Bus
 ### APIC
 [Advanced Programmable Interrupt Controller](https://en.wikipedia.org/wiki/Advanced_Programmable_Interrupt_Controller)
 
-CPU, ALU, bus, RAM, Registers, Operations
+CPU, Clock(s), Program Counter, Instruction Register, Arithmetic Logic Unit, bus(es), RAM, Registers, Operations
+
+CPU - a general purpose hardware component built with custom hardware to: read and write memory, perform arithmetic
+
+Clock(s) - Special pieces of electronics hardware that cause a small voltage cycle at an insanely fast speed. Kaby Lake clocks: base, core, ring, IGP, eDRAM, Mem
+
+Registers - Small memory locations within the CPU used for retrieving instructions, reading and writing memory, and executing commands.
+
+Instruction Register - A special memory register that decodes, pipelines, and executes the current instruction (which was read from the memory pointed to by the program counter). In our small example the instruction register will handle a single instruction, memory address, or data, but in a modern CPU at least 64 bits are available and the instruction can be combined with data like (MUL register1address register2address).
+
+Arithmetic Logic Unit - Part of the CPU that handles basic arithmetic and boolean comparisons.
+
+Operations - Single numeric values that indicate to the CPU the next step or series of steps.
+
+Cache - Memory located inside of the CPU for low latency and high throughput. RAM located outside of CPU fundamentally must be slower, because it is so far away.
+
+bus - A set of wires that connects the CPU with other system components such as RAM and peripherals. The CPU has internal buses, and modern systems have different buses for different components: DMA bus, PCI bus, 
+
+RAM - A grid of bits
 
 Reading:
 
@@ -41,15 +59,6 @@ Assignment:
 
 Using the ASCII table, a stack, a program counter, and a tiny set of instructions: set, copy, and print, write a program that contains an array of instructions, a "CPU" that reads them starting at index 0, and another array containing the ASCII values, print "Hello world" using node.
 
-The following command line input:
-
-    node microbusarchitecture.js < inputfile
-
-Should produce
-
-    Hello World!
-
-Using the above specified architecture. `console.log('Hello World!')` is not sufficient.
 
     #inputfile
     00000001 # initialize
@@ -68,7 +77,17 @@ Using the above specified architecture. `console.log('Hello World!')` is not suf
     00000001 # register #1
     00000010 # SET register
     00000010 # register #3
-    00000101 # PRINT
+    00000101 # PRINT_NUMERIC
 
+Extra credit:
 
+The following command line input:
+
+    node microbusarchitecture.js < inputfile
+
+Should produce
+
+    Hello World!
+
+Using the above specified architecture. `console.log('Hello World!')` is not sufficient.
 
