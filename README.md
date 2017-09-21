@@ -18,6 +18,8 @@ Computers have grown radically in transistor density and clock speed, but the ov
 
 [i7 CPU underside](https://upload.wikimedia.org/wikipedia/commons/c/c9/Core_i7_bottom.png)
 
+[Amazing diagram of Kaby Lake CPU architecture](https://en.wikichip.org/wiki/intel/microarchitectures/kaby_lake)
+
 ## Interrupting the CPU
 
 Polling, Interrupts, and DMA
@@ -41,11 +43,32 @@ Using the ASCII table, a stack, a program counter, and a tiny set of instruction
 
 The following command line input:
 
-    node microbusarchitecture.js
+    node microbusarchitecture.js < inputfile
 
-Should prodsuce
+Should produce
 
     Hello World!
 
 Using the above specified architecture. `console.log('Hello World!')` is not sufficient.
-# Computer-Architecture-One
+
+    #inputfile
+    00000001 # initialize
+    00000010 # SET register
+    00000000 # register #0
+    00000100 # SAVE next
+    00001000 # 8
+    00000010 # SET register
+    00000001 # register #1
+    00000100 # SAVE next
+    00001001 # 9
+    00000010 # SET register
+    00000010 # register #3
+    00000101 # MUL into last
+    00000000 # register #0
+    00000001 # register #1
+    00000010 # SET register
+    00000010 # register #3
+    00000101 # PRINT
+
+
+
