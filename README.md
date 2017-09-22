@@ -6,7 +6,7 @@ The first pair of sprints in this coursework are about your computer itself: com
 
 Computers have grown radically in transistor density and clock speed, but the overall design of your computer has not changed tremendously since the 8086 in 1976 [1](https://en.wikipedia.org/wiki/X86). Modern computers utilized a fixed component architecture, where separate components can be upgraded, swapped, or redesigned for the next version with minimal impact on other components. It helps to visualize these components on a full size ATX form-factor motherboard:
 
-![Image of motherboard](https://www.dropbox.com/s/7jc00mllz3vs8ta/Lambda%20School%20Motherboard.jpg?raw=1 =500x500)
+![Image of motherboard](https://www.dropbox.com/s/7jc00mllz3vs8ta/Lambda%20School%20Motherboard.jpg?raw=1){:width="50%"}
 
 ![LGA-1151 socket](https://en.wikichip.org/wiki/File:FCLGA-1151.svg)
 
