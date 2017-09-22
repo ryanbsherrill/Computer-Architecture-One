@@ -6,43 +6,41 @@ The first pair of sprints in this coursework are about your computer itself: com
 
 Computers have grown radically in transistor density and clock speed, but the overall design of your computer has not changed tremendously since the 8086 in 1976 [1](https://en.wikipedia.org/wiki/X86). Modern computers utilized a fixed component architecture, where separate components can be upgraded, swapped, or redesigned for the next version with minimal impact on other components. It helps to visualize these components on a full size ATX form-factor motherboard:
 
-![Image of motherboard](https://www.dropbox.com/s/7jc00mllz3vs8ta/Lambda%20School%20Motherboard.jpg?raw=1){:width="50%"}
+![Image of motherboard](https://www.dropbox.com/s/7jc00mllz3vs8ta/Lambda%20School%20Motherboard.jpg?raw=1)
+An image of an older motherboard - many of the base components are the same, but the front size bus is missing on modern motherboards because it is now inside of the CPU.
 
-![LGA-1151 socket](https://en.wikichip.org/wiki/File:FCLGA-1151.svg)
-
-![Kaby Lake Quad Core](https://en.wikichip.org/w/images/thumb/d/dc/kaby_lake_%28quad_core%29_%28annotated%29.png/800px-kaby_lake_%28quad_core%29_%28annotated%29.png)
-
-![Quad core manual diagram](https://en.wikichip.org/w/images/thumb/d/dc/kaby_lake_%28quad_core%29_%28annotated%29.png/800px-kaby_lake_%28quad_core%29_%28annotated%29.png)
+![LGA-1151 socket](https://upload.wikimedia.org/wikipedia/commons/c/c9/Core_i7_bottom.png)
+The pins on the bottom of the CPU that connect it with the rest of the system components: clock controls, buses, serial interfaces, interrupts, power
 
 ![i7 CPU on motherboard](https://commons.wikimedia.org/wiki/File:Intel_i7_4770_CPU_on_an_ASUS_Gryphon_Z87_uATX_motherboard.jpg)
 
-![i7 CPU underside](https://upload.wikimedia.org/wikipedia/commons/c/c9/Core_i7_bottom.png)
+![Kaby Lake Quad Core](https://en.wikichip.org/w/images/thumb/d/dc/kaby_lake_%28quad_core%29_%28annotated%29.png/800px-kaby_lake_%28quad_core%29_%28annotated%29.png)
 
-Full explanation of Kaby Lake cpu design:
+![Quad core manual diagram](https://www.dropbox.com/s/3xli0imznavxdnf/Kaby%20Lake%20Core%20design.png?raw=1)
 
-[Amazing diagram of Kaby Lake CPU architecture](https://en.wikichip.org/wiki/intel/microarchitectures/kaby_lake)
+[Amazing explanation of Kaby Lake CPU architecture](https://en.wikichip.org/wiki/intel/microarchitectures/kaby_lake)
 
 # Elements of the CPU
 
 CPU, Clock(s), Program Counter, Instruction Register, Arithmetic Logic Unit, bus(es), RAM, Registers, Operations
 
-#### CPU - a general purpose hardware component built with custom hardware to: read and write memory, perform arithmetic
+- CPU - a general purpose hardware component built with custom hardware to: read and write memory, perform arithmetic
 
-#### Clock(s) - Special pieces of electronics hardware that cause a small voltage cycle at an insanely fast speed. Kaby Lake clocks: base, core, ring, IGP, eDRAM, Mem
+- Clock(s) - Special pieces of electronics hardware that cause a small voltage cycle at an insanely fast speed. Kaby Lake clocks: base, core, ring, IGP, eDRAM, Mem
 
-#### Registers - Small memory locations within the CPU used for retrieving instructions, reading and writing memory, and executing commands.
+- Registers - Small memory locations within the CPU used for retrieving instructions, reading and writing memory, and executing commands.
 
-#### Instruction Register - A special memory register that decodes, pipelines, and executes the current instruction (which was read from the memory pointed to by the program counter). In our small example the instruction register will handle a single instruction, memory address, or data, but in a modern CPU at least 64 bits are available and the instruction can be combined with data like (MUL register1address register2address).
+- Instruction Register - A special memory register that decodes, pipelines, and executes the current instruction (which was read from the memory pointed to by the program counter). In our small example the instruction register will handle a single instruction, memory address, or data, but in a modern CPU at least 64 bits are available and the instruction can be combined with data like (MUL register1address register2address).
 
-#### Arithmetic Logic Unit - Part of the CPU that handles basic arithmetic and boolean comparisons.
+- Arithmetic Logic Unit - Part of the CPU that handles basic arithmetic and boolean comparisons.
 
-#### Operations - Single numeric values that indicate to the CPU the next step or series of steps.
+- Operations - Single numeric values that indicate to the CPU the next step or series of steps.
 
-#### Cache - Memory located inside of the CPU for low latency and high throughput. RAM located outside of CPU fundamentally must be slower, because it is so far away.
+- Cache - Memory located inside of the CPU for low latency and high throughput. RAM located outside of CPU fundamentally must be slower, because it is so far away.
 
-#### bus - A set of wires that connects the CPU with other system components such as RAM and peripherals. The CPU has internal buses, and modern systems have different buses for different components: DMA bus, PCI bus, 
+- bus - A set of wires that connects the CPU with other system components such as RAM and peripherals. The CPU has internal buses, and modern systems have different buses for different components: DMA bus, PCI bus, 
 
-#### RAM - A grid of bits
+- RAM - A grid of bits
 
 Reading:
 
