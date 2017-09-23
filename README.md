@@ -4,6 +4,16 @@ Welcome to the first class on classical Computer Science! Beginning now, you wil
 
 The first pair of sprints in this coursework are about your computer itself: computer architecture. Generic computers are just a large and careful collection of basic electronics components and wires connecting them. Computer architecture is the specific design of a computer.
 
+## Basic Computer Engineering
+
+We can't start our study of computers without a brief discussion of computer engineering. Know what the following words mean:
+
+- Transistor
+- Logic gate
+- RS Flip Flop
+
+## Architecture
+
 ![Basic Architecture](https://www.lucidchart.com/publicSegments/view/8e06c9e0-0087-4c53-9486-c5aaca137ff3/image.png)
 
 Computers have grown radically in transistor density and clock speed, but the overall design of your computer has not changed tremendously since the 8086 in 1976 [1](https://en.wikipedia.org/wiki/X86). Modern computers utilized a fixed component architecture, where separate components can be upgraded, swapped, or redesigned for the next version with minimal impact on other components. It helps to visualize these components on a full size ATX form-factor motherboard:
@@ -94,3 +104,11 @@ Should produce
 
 Using the above specified architecture. `console.log('Hello World!')` is not sufficient.
 
+
+# Links
+
+[Instruction Register](https://en.wikipedia.org/wiki/Instruction_register)
+
+[RAM](https://en.wikipedia.org/wiki/Random-access_memory)
+
+[PCE Express](https://en.wikipedia.org/wiki/PCI_Express)
