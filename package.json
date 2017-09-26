@@ -1,0 +1,22 @@
+{
+  "name": "computer-architecture-one",
+  "version": "1.0.0",
+  "description": "Welcome to the first class on classical Computer Science! Beginning now, you will be studying the underpinnings of the programming lessons that you have practiced previously.",
+  "main": "microbusarchitecture.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanbsherrill/Computer-Architecture-One.git"
+  },
+  "author": "Ryan <ryanbsherrill@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanbsherrill/Computer-Architecture-One/issues"
+  },
+  "homepage": "https://github.com/ryanbsherrill/Computer-Architecture-One#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
